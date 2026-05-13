@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #F5F5F5;
+    font: Arial, Helvetica, sans-serif;
+}
+.page {
+    background-color: white;
+    padding: 32px;
+    border-radius: 16px;
+}
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 0 auto;
+    margin: 0 auto;
+    text-align: justify;
+    box-shadow: 2px 2px 8px #655f5f;
+}
+.container img {
+    width: 100%;
+    padding: 32px 0;
+}
+
+h1, h2 {
+    padding: 32px 0;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+footer {
+    padding: 24px 0;
+    text-align: center;
+    color: blueviolet;
+}

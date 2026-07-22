@@ -47,6 +47,7 @@ html {
     font-size: var(--fs-base);
     line-height: 1.6;
     color: var(--text-color-primary);
+    overflow-x: hidden;
 
     & h1 {
         font-size: var(--fs-2xl);
@@ -57,6 +58,7 @@ html {
     & h3 {
         font-size: var(--fs-lg);
     }
+    
 }
 
 body {

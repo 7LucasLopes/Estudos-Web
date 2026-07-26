@@ -20,9 +20,27 @@ section.gallery {
     & .content {
         margin-top: 2rem;
         display: grid;
-        grid-template-areas: "A B B" "C C D";
+        grid-template-areas: 
+        "A B B" 
+        "C C D";
         gap: 2.5rem;
     }
+
+    & figure:nth-child(1) {
+            grid-area: A;
+        }
+
+        & figure:nth-child(2) {
+            grid-area: B;
+        }
+
+        & figure:nth-child(3) {
+            grid-area: C;
+        }
+
+        & figure:nth-child(4) {
+            grid-area: D;
+        }
 
     & figure {
         position: relative;
@@ -52,21 +70,7 @@ section.gallery {
                 transform: translateY(0);
             }
         }
-        & figure:nth-child(1) {
-            grid-area: A;
-        }
-
-        & figure:nth-child(2) {
-            grid-area: B;
-        }
-
-        & figure:nth-child(3) {
-            grid-area: C;
-        }
-
-        & figure:nth-child(4) {
-            grid-area: D;
-        }
+        
     }
 
     & figcaption {

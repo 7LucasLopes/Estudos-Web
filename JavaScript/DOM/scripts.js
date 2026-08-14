@@ -1,4 +1,4 @@
-console.log(document.title)
+/*console.log(document.title)
 
 // Acessar elemento com o ID (Seletor ID)
 const guest = document.getElementById("guest-2")
@@ -15,4 +15,18 @@ console.log(guestsByClass.item(0))
 console.log(guestsByClass[1])
 
 const guestsTag = document.getElementsByTagName("li")
-console.log(guestsTag)
+console.log(guestsTag)*/
+
+//Acessa o elemento pelo seletor ID
+const guest = document.querySelector("#guest-2")
+console.log(guest)
+
+//Acessa o elemento pelo seletor class 
+
+const guests = document.querySelector(".guest")
+console.log(guests)
+
+//Retorna todos os elementos encontrados pelo query
+
+const guestss = document.querySelectorAll(".guest")
+console.log(guestss)

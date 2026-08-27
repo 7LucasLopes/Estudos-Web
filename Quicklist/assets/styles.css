@@ -26,3 +26,15 @@
     --font-paragraph: 500 16px/20px var(--font-family);
     --font-link: 500 14/16px var(--font-family);
 }
+
+body {
+    background-color: var(--background-primary);
+}
+
+button {
+    background-color: var(--color-brand);
+    border-radius: 12px;
+    font: var(--font-label);
+    color: var(--always-white);
+    padding: 10px;
+}

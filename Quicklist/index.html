@@ -4,18 +4,90 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quicklist</title>
     
-    <link rel="stylesheet" href="../Quicklist/assets/styles.css">   
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Quicklist/assets/styles.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet"> 
+    
 
 </head>
 <body>
-    
+    <header id="logo">
+        <img src="../Quicklist/assets/icons/logoIcon.svg" alt="Três barrinhas uma embaixo da outra em cor de rosa.">
+        <h1>quicklist</h1>
+    </header>
+    <main>
+        <section id="back">
+            <a href="#">
+                <button aria-label="Butão para retornar a página principal. Porém, como é uma página para fins de estudo no momento não contém uma página principal.">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5"    stroke-linecap="round" stroke-linejoin="round">
+                     <path d="M5.5 12.002H19"></path>
+                        <path d="M10.9999 18.002C10.9999 18.002 4.99998 13.583 4.99997 12.0019C4.99996 10.4208 11 6.00195 11 6.00195"></path>
+                    </svg>
 
+                </button>
+                <span>Voltar</span>
+            </a>
+        </section>
+
+        <h2 id="title-page">Compras da semana</h2>
+
+        <section id="add-item">
+            <form>                
+                <input type="text" name="item" id="item" placeholder="Adicione um novo item">
+                <button type="submit" class="submit" aria-label="Butão para adicionar um novo item a lista de compra.">Adicionar item</button>
+            </form>
+        </section>
+
+        <section id="list">
+            <ul class="items-list">
+                <li class="item">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="item-1">
+                        <label for="item-1">Pão de forma</label>
+                    </div>
+                    <button type="button" class="delete-btn" aria-label="Botão que serve para retirar o item da lista de compras."><img src="../Quicklist/assets/icons/trashIcon.svg" alt="ícone de uma lixeira"></button>
+                </li>
+
+                <li class="item">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="item-2">
+                        <label for="item-2">Café preto</label>
+                    </div>
+                    <button type="button" class="delete-btn" aria-label="Botão que serve para retirar o item da lista de compras."><img src="../Quicklist/assets/icons/trashIcon.svg" alt="ícone de uma lixeira"></button>
+                </li>
+
+                <li class="item">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="item-3">
+                        <label for="item-3">Suco de laranja</label>
+                    </div>
+                    <button type="button" class="delete-btn" aria-label="Botão que serve para retirar o item da lista de compras."><img src="../Quicklist/assets/icons/trashIcon.svg" alt="ícone de uma lixeira"></button>
+                </li>
+
+                <li class="item">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="item-4">
+                        <label for="item-4">bolacha</label>
+                    </div>
+                    <button type="button" class="delete-btn" aria-label="Botão que serve para retirar o item da lista de compras."><img src="../Quicklist/assets/icons/trashIcon.svg" alt="ícone de uma lixeira"></button>
+                </li>
+            </ul>
+        </section>
+
+        <div id="delete-alert" class="alert hidden">
+            <div class="wrapper">
+                <img src="../Quicklist/assets/icons/warning-circle.svg" alt="">
+                <span>O Item foi removido da lista</span>
+            </div>
+            <img src="../Quicklist/assets/icons/delete-small.svg" alt="">
+        </div>
+        
+    </main>
 
 
     

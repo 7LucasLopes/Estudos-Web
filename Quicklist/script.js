@@ -5,7 +5,7 @@ const form = document.querySelector("form")
 const deleteAlert = document.getElementById("delete-alert")
 
 itemInput.addEventListener("input", function() {
-    const hasSpecialCharacters = /[^A-Za-z0-9 ]/g
+    const hasSpecialCharacters = /[^A-Za-z0-9 a-zà-úÀ-ÚçÇ]/g
 
     itemInput.value = itemInput.value.replace(hasSpecialCharacters, "")
 })

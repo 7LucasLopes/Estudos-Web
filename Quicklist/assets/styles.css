@@ -103,7 +103,7 @@ input {
     border: none;
     cursor: pointer;
 }
-.items-list {
+.itemsList {
     list-style: none;
     display: flex;
     flex-direction: column;
